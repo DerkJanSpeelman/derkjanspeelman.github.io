@@ -65,15 +65,13 @@ a {
 }
 
 .site-footer {
-
-}
-
-.site-footer .site-footer-owner {
-
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px #eff0f1;
 }
 
 .site-footer .site-footer-credits {
-
+    color: #819198;
 }
 
 @media screen and (min-width: 64em) {
@@ -98,6 +96,10 @@ a {
         margin: 0 auto;
         font-size: 1.1rem;
     }
+    
+    .site-footer {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 64em) and (min-width: 42em) {
@@ -120,6 +122,10 @@ a {
     .main-content {
         padding: 2rem 4rem;
         font-size: 1.1rem;
+    }
+    
+    .site-footer {
+        font-size: 1rem;
     }
 }
 
@@ -145,5 +151,9 @@ a {
     .main-content {
         padding: 2rem 1rem;
         font-size: 1rem;
+    }
+    
+    .site-footer {
+        font-size: 0.9rem;
     }
 }
