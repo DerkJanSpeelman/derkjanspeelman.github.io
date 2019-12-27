@@ -1,12 +1,37 @@
-<header class="page-header" role="banner">
-    <h1 class="project-name">derkjanspeelman.github.io</h1>
-    <h2 class="project-tagline"></h2>
-    <a href="https://derkjanspeelman.nl" target="_blank" class="btn">Personal website</a>
-    <A href="mailto:derkjanspeelman@gmail.com">Email me</A>
-</header>
-<main id="content" class="main-content" role="main">
-    <footer class="site-footer">
-        <span class="site-footer-owner">This website uses <a href="https://github.com/pages-themes/cayman">cayman</a> theme.</span>
-        <span class="site-footer-credits">© 2019 <a href="https://derkjanspeelman.nl">Derk Jan Speelman</a> all rights reserved.</span>
-    </footer>
-</main>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+
+        {% if site.google_analytics %}
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{{ site.google_analytics }}');
+        </script>
+        {% endif %}
+        
+        <meta charset="UTF-8">
+
+        {% seo %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#157878">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    </head>
+    <body>
+        <header class="page-header" role="banner">
+            <h1 class="project-name">derkjanspeelman.github.io</h1>
+            <h2 class="project-tagline"></h2>
+            <a href="https://derkjanspeelman.nl" target="_blank" class="btn">Personal website</a>
+            <A href="mailto:derkjanspeelman@gmail.com">Email me</A>
+        </header>
+        <main id="content" class="main-content" role="main">
+            <footer class="site-footer">
+                <span class="site-footer-owner">This website uses <a href="https://github.com/pages-themes/cayman">cayman</a> theme.</span>
+                <span class="site-footer-credits">© 2019 <a href="https://derkjanspeelman.nl">Derk Jan Speelman</a> all rights reserved.</span>
+            </footer>
+        </main>
+    </body>
+</html>
